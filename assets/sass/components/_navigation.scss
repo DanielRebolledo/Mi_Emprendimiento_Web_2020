@@ -10,6 +10,11 @@
         color: $white;
         font-size: $xxxx-large;
         text-align: right;
+        transition: 0.3s ease-in-out ;
+    }
+
+    & .navbar__button:hover{
+        color: $orange;
     }
 }
 
@@ -32,4 +37,43 @@
     background-image: url('../img/desarrolloweb2021t.svg');
     background-size: cover;
     background-position: center;
+}
+
+@media only screen and (min-width: 960px){
+    .navbar{
+        & .navbar__button{
+            display: none;
+        }
+    }
+    
+    .contenedor--navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar__collapse{
+        width: 40%;
+        display: block;
+        text-align: right;
+        
+        
+        & li{
+            display: inline;
+            margin: 0px 15px;
+            
+        }
+        & li a{
+            color: $white;
+        }
+
+    }
+    
+    .banner{
+        width: 100%;
+        height: 400px;
+        background-image: url('../img/desarrolloweb2021t.svg');
+        background-size: cover;
+        background-position: center;
+    }
 }

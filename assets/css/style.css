@@ -9,7 +9,6 @@
   display: grid;
   border: 1px solid #060606;
   padding: 25px 25px;
-  /* grid-template-columns: repeat(12, 1fr); */
   grid-template-columns: 1fr;
   column-gap: 1em;
   row-gap: 1em;
@@ -72,19 +71,24 @@ p {
   clear: both;
 }
 
+.main__section {
+  display: grid;
+}
+
 .right, .left {
   width: 95%;
-  margin: 25px auto;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
 .curso {
   border: 1px dotted #5d5d5d;
-  margin: 5px 0px;
-  padding: 25px 0px;
+  margin: 5px auto;
+  padding: 25px 5px;
 }
 .curso .curso__cabecera {
   width: 100%;
-  height: 100px;
+  height: 150px;
   margin: auto;
   background-size: cover;
   background-position: center;
@@ -94,6 +98,11 @@ p {
 }
 .curso h4, .curso p, .curso h6, .curso .curso__icons {
   margin: 15px 0px;
+}
+
+.curso__icons i {
+  display: inline;
+  margin-right: 15px;
 }
 
 .curso__cabecera--html {
@@ -124,23 +133,118 @@ p {
   color: #ffffff;
 }
 
-.curso__icons {
-  display: flex;
+.curso__rrss li a .fab {
+  color: #000000;
 }
 
 .curso__rrss {
+  width: 200px;
+  margin: auto;
   text-align: center;
   display: flex;
   justify-content: center;
   font-size: 30px;
 }
 
+.curso__lista {
+  margin-left: 25px;
+}
+.curso__lista ul {
+  list-style: circle;
+}
+
+.svg__animado {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 960px) {
+  .main__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    grid-auto-rows: auto;
+    cursor: pointer;
+  }
+
+  .curso .curso__cabecera {
+    width: 100%;
+    height: 200px;
+  }
+
+  .curso__rrss li a .far {
+    width: auto;
+  }
+
+  .curso__rrss {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+}
 .footer {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
-  height: 400px;
+  padding: 50px 0px;
   text-align: center;
+}
+.footer .contenedor--footer {
+  display: grid;
+}
+
+.footer .legal, .footer p, .footer input, .footer .button {
+  margin: 10px 0px;
+}
+
+@media only screen and (min-width: 960px) {
+  .footer {
+    text-align: start;
+  }
+  .footer .contenedor--footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    grid-auto-rows: auto;
+  }
+
+  .footer__input {
+    text-align: right;
+  }
+  .footer__input p, .footer__input .input, .footer__input button {
+    display: inline;
+  }
+  .footer__input .input {
+    margin: 0px 15px;
+  }
+}
+.button {
+  width: auto;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 25px;
+  color: #000000;
+  background-color: #ffaf6d;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button:focus {
+  background-color: #ffffff;
+  color: #ffa500;
+}
+
+.input {
+  width: 200px;
+  padding: 5px;
+}
+
+.input:focus {
+  background-color: #ffa500;
 }
 
 .navbar {
@@ -154,6 +258,10 @@ p {
   color: #ffffff;
   font-size: 45px;
   text-align: right;
+  transition: 0.3s ease-in-out;
+}
+.navbar .navbar__button:hover {
+  color: #ffa500;
 }
 
 .navbar__logo {
@@ -174,6 +282,39 @@ p {
   background-image: url("../img/desarrolloweb2021t.svg");
   background-size: cover;
   background-position: center;
+}
+
+@media only screen and (min-width: 960px) {
+  .navbar .navbar__button {
+    display: none;
+  }
+
+  .contenedor--navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar__collapse {
+    width: 40%;
+    display: block;
+    text-align: right;
+  }
+  .navbar__collapse li {
+    display: inline;
+    margin: 0px 15px;
+  }
+  .navbar__collapse li a {
+    color: #ffffff;
+  }
+
+  .banner {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/desarrolloweb2021t.svg");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,102 +13,100 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <div class="contenedor">
+            <div class="contenedor contenedor--navbar">
                 <a class="navbar__logo" href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
                 <a class="navbar__button" href="#"><i class="fas fa-bars"></i></a>
-                <div class="clear"></div>
+                
                 <ul class="navbar__collapse">
-                    <li>Acerca de</li>
-                    <li>Cursos</li>
-                    <li>Precios</li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Precios</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <section class="banner"></section>
-
-    <div class="right">
-        <main class="main-section">
-            <div class="row">
-                <section class="columna">
-                    <article class="curso">
-                        <div class="curso__cabecera curso__cabecera--html"></div>
-                        <h4>HTLM y CSS para principiantes.</h4>
-                        <p>HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto, en este curso aprenderás todo dobre HTML y CSS, desde lo más básico hasta un nuvel intermedio, logrando desarrollar tu primera página web responsiva, sin la necesidad de aplicar librerías externas para CSS.</p>
-                        <h6>Instructor: Manuel González</h6>
-                        <div class="curso__icons">
-                            <i class="far fa-thumbs-up"><span> 1</span></i>
-                            <i class="far fa-eye"> 9</i>
-                            <i class="far fa-comments"> 9</i>
-                            <i class="fas fa-share-alt"> 0</i>
-                        </div>
-                    </article>
-    
-                    <article class="curso">
-                        <div class="curso__cabecera curso__cabecera--sass"></div>
-                        <h4>Estilos con SASS.</h4>
-                        <p>SASS es una herramienta importante hoy en día para todo desarrollador web, ya que permite crear estilos mas ordenados, eficiente y con menos líneas de código. Por ello, es este curso aprenderás todo lo necesario para crear hojas de estilos desde la sintaxis de SCSS, implementando técnicas propias de SASS</p>
-                        <h6>Instructor: Manuel González</h6>
-                        <div class="curso__icons">
-                            <i class="far fa-thumbs-up"> 1</i>
-                            <i class="far fa-eye"> 9</i>
-                            <i class="far fa-comments"> 8</i>
-                            <i class="fas fa-share-alt"> 5</i>
-                        </div>
-                    </article>
-                </section>
-            </div>
-        </main>
-    </div>
-
-    <div class="left">
-        <main class="main-section">
-            <div class="row">
-                <section class="columna">
-                    <article class="curso curso--left">
-                        <div class="curso__cabecera--cursos"></div>
-                        <h6>CURSOS 2020 LTDA</h6>
-                        <ul class="curso__rrss">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-github"></i></a></li>
-                        </ul>
-                        <p>Cursos 2020 Ltda, es una empresa especialista en capacitaciones de personal en Desarrollo Web. Partiendo desde lo más bHTML y CSS, hasta lo más complejo con SASS y JavaScript. Igualmente se ofrecen cursos más especializados para el BackEnd, implementación de frameworks para el frontEnd, entre otros.</p>
-                        <h6 class="mas__cursos">Más Cursos</h6>
-                        <div class="curso__icons">
-                            <ul style="list-style: circle;">
-                                <li><a href="#">Analítica Web (3)</a></li>
-                                <li><a href="#">Diseño Web (4)</a></li>
-                                <li><a href="#">Desarrollo BackEnd (9)</a></li>
-                                <li><a href="#">Seguridad Informática (14)</a></li>
-                                <li><a href="#">Social Media (7)</a></li>
-                                <li><a href="#">SEO (8)</a></li>
-                                <li><a href="#">UI/UX (3)</a></li>
-                                <li><a href="#">JavaScript (5)</a></li>
-                                <li><a href="#">VueJS (1)</a></li>
+    <div class="contenedor">
+        <main class="main__section">
+            <section class="right">
+                <div class="row">
+                    <section class="columna">
+                        <article class="curso">
+                            <div class="curso__cabecera curso__cabecera--html"></div>
+                            <h4>HTLM y CSS para principiantes.</h4>
+                            <p>HTML y CSS son dos herramientas importantes para dar inicio en el mundo del desarrollo web. Por lo tanto, en este curso aprenderás todo dobre HTML y CSS, desde lo más básico hasta un nuvel intermedio, logrando desarrollar tu primera página web responsiva, sin la necesidad de aplicar librerías externas para CSS.</p>
+                            <h6>Instructor: Manuel González</h6>
+                            <div class="curso__icons">
+                                <i class="far fa-thumbs-up"><span> 1</span></i>
+                                <i class="far fa-eye"> 9</i>
+                                <i class="far fa-comments"> 9</i>
+                                <i class="fas fa-share-alt"> 0</i>
+                            </div>
+                        </article>
+        
+                        <article class="curso">
+                            <div class="curso__cabecera curso__cabecera--sass"></div>
+                            <h4>Estilos con SASS.</h4>
+                            <p>SASS es una herramienta importante hoy en día para todo desarrollador web, ya que permite crear estilos mas ordenados, eficiente y con menos líneas de código. Por ello, es este curso aprenderás todo lo necesario para crear hojas de estilos desde la sintaxis de SCSS, implementando técnicas propias de SASS</p>
+                            <h6>Instructor: Manuel González</h6>
+                            <div class="curso__icons">
+                                <i class="far fa-thumbs-up"> 1</i>
+                                <i class="far fa-eye"> 9</i>
+                                <i class="far fa-comments"> 8</i>
+                                <i class="fas fa-share-alt"> 5</i>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </section>
+        
+            <section class="left">
+                <div class="row">
+                    <section class="columna">
+                        <article class="curso curso--left">
+                            <div class="curso__cabecera--cursos"></div>
+                            <h6>CURSOS 2020 LTDA</h6>
+                            <ul class="curso__rrss">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-github"></i></a></li>
                             </ul>
-                        </div>
-                        <img src="assets/img/web.svg" alt="logo-web">
-                    </article>
-                </section>
-            </div>
+                            <p>Cursos 2020 Ltda, es una empresa especialista en capacitaciones de personal en Desarrollo Web. Partiendo desde lo más bHTML y CSS, hasta lo más complejo con SASS y JavaScript. Igualmente se ofrecen cursos más especializados para el BackEnd, implementación de frameworks para el frontEnd, entre otros.</p>
+                            <h6 class="mas__cursos">Más Cursos</h6>
+                            <div class="curso__lista">
+                                <ul>
+                                    <li><a href="#">Analítica Web (3)</a></li>
+                                    <li><a href="#">Diseño Web (4)</a></li>
+                                    <li><a href="#">Desarrollo BackEnd (9)</a></li>
+                                    <li><a href="#">Seguridad Informática (14)</a></li>
+                                    <li><a href="#">Social Media (7)</a></li>
+                                    <li><a href="#">SEO (8)</a></li>
+                                    <li><a href="#">UI/UX (3)</a></li>
+                                    <li><a href="#">JavaScript (5)</a></li>
+                                    <li><a href="#">VueJS (1)</a></li>
+                                </ul>
+                            </div>
+                            <img class="svg__animado" src="assets/img/web.svg" alt="logo-web">
+                        </article>
+                    </section>
+                </div>
+            </section>
         </main>
     </div>
 
     <footer class="footer">
-        <div class="legal">
-            <p>&#169;2021 | Todos los derechos reservados.</p>
+        <div class="contenedor contenedor--footer">
+            <div class="footer__legal">
+                <p>&#169;2021 | Todos los derechos reservados.</p>
+            </div>
+            <div class="footer__input">
+                <p>Legal</p>
+                <p>Sobre Anuncios</p>
+                <input class="input" type="mail" placeholder="e-mail">
+                <button class="button">Enviar</button>
+            </div>
         </div>
-        <p>Legal Sobre Anuncios</p>
-        <input type="mail" placeholder="Email">
-        <button>Enviar</button>
     </footer>
-    
-    
-    
-
-    
-    
 </body>
 </html>

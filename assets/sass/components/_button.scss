@@ -1,0 +1,19 @@
+.button{
+    width: auto;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 25px;
+    color: $black;
+    background-color: $tangerine;
+    
+}
+
+.button:hover{
+    background-color: $white;
+    color: $black;
+}
+
+.button:focus{
+    background-color: $white;
+    color: $orange;
+}
