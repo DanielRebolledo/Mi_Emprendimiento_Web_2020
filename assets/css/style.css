@@ -168,6 +168,13 @@ p {
     cursor: pointer;
   }
 
+  .right, .left {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 0px;
+    display: flex;
+  }
+
   .curso .curso__cabecera {
     width: 100%;
     height: 200px;
@@ -188,6 +195,7 @@ p {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
+  margin-top: 25px;
   padding: 50px 0px;
   text-align: center;
 }
@@ -250,6 +258,8 @@ p {
 .navbar {
   background-color: #000000;
   height: 80px;
+  display: flex;
+  align-items: center;
 }
 .navbar .navbar__button {
   width: 20%;
@@ -278,9 +288,10 @@ p {
 
 .banner {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-image: url("../img/desarrolloweb2021t.svg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -312,7 +323,8 @@ p {
     width: 100%;
     height: 400px;
     background-image: url("../img/desarrolloweb2021t.svg");
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
     background-position: center;
   }
 }

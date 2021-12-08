@@ -1,6 +1,8 @@
 .navbar{
     background-color: $black;
     height: 80px;
+    display: flex;
+    align-items: center;
     
     
     & .navbar__button{
@@ -33,9 +35,10 @@
 
 .banner{
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-image: url('../img/desarrolloweb2021t.svg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -73,7 +76,8 @@
         width: 100%;
         height: 400px;
         background-image: url('../img/desarrolloweb2021t.svg');
-        background-size: cover;
+        background-size: auto;
+        background-repeat: no-repeat;
         background-position: center;
     }
 }
