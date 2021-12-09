@@ -12,18 +12,20 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
-            <div class="contenedor contenedor--navbar">
-                <a class="navbar__logo" href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
-                <a class="navbar__button" href="#"><i class="fas fa-bars"></i></a>
-                
-                <ul class="navbar__collapse">
+        <div class="contenedor contenedor--navbar">
+            <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">
+                <i class="burger fas fa-bars"></i>
+            </label>
+            <nav class="navbar">
+                <ul class="menu">
                     <li><a href="#">Acerca de</a></li>
                     <li><a href="#">Cursos</a></li>
                     <li><a href="#">Precios</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <section class="banner"></section>

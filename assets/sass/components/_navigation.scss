@@ -1,75 +1,114 @@
-.navbar{
-    background-color: $black;
-    height: 80px;
+.contenedor--navbar{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    
-    
-    & .navbar__button{
-        width: 20%;
-        float: right;
-        cursor: pointer;
-        color: $white;
-        font-size: $xxxx-large;
-        text-align: right;
-        transition: 0.3s ease-in-out ;
-    }
-
-    & .navbar__button:hover{
-        color: $orange;
-    }
 }
 
-.navbar__logo{
-    float: left;
+.logo{
     width: 60px;
+    margin-top: 10px;
+    float: left;
     
     & img{
         width: 60px;
     }
 }
 
-.navbar__collapse{
+
+.burger{
+    width: 20%;
+    float: right;
+    color: $white;
+    font-size: $xxxx-large;
+    text-align: right;
+    transition: 0.3s ease-in-out ;
+
+    &.burger:hover{
+        color: $orange;
+    }
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: 0;
+    position: absolute;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-100%);
+
+    & li{
+        color: $black;
+        text-align: center;
+        border-bottom: 1px solid rgba($black, 0.2);
+        padding: 40px 0px 40px 10px;
+    }
+    & li:hover{
+        background-color: rgba($black, 0.05);
+    }
+}
+
+#menu-bar{
     display: none;
 }
 
-.banner{
+#menu-bar:checked ~ .navbar{
+    transform: translateX(0%);
+}
+
+/* .banner{
     width: 100%;
     height: 200px;
     background-image: url('../img/desarrolloweb2021t.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+} */
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/desarrolloweb2021t.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media only screen and (min-width: 960px){
-    .navbar{
-        & .navbar__button{
-            display: none;
-        }
+    .burger{
+        display: none;
     }
     
-    .contenedor--navbar{
+    .navbar{
+        width: 100%;
+        height: 80px;
+        top: 0px;
+        left: 0;
+        position:static;
+        margin-bottom: 0;
+        background-color: $black;
+        transform: translateX(0%);
+        text-align: right;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-    }
-
-    .navbar__collapse{
-        width: 40%;
-        display: block;
-        text-align: right;
-        
         
         & li{
             display: inline;
-            margin: 0px 15px;
-            
+            text-align: center;
+            border-bottom: none;
+            padding: 40px 0px 40px 10px;
         }
         & li a{
             color: $white;
         }
-
+        
+        & li a:hover{
+            color: $orange;
+        }
     }
     
     .banner{

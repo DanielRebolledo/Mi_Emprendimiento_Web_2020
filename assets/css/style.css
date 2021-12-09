@@ -71,6 +71,11 @@ p {
   clear: both;
 }
 
+.header {
+  background-color: #000000;
+  height: 80px;
+}
+
 .main__section {
   display: grid;
 }
@@ -255,68 +260,108 @@ p {
   background-color: #ffa500;
 }
 
-.navbar {
-  background-color: #000000;
-  height: 80px;
+.contenedor--navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.navbar .navbar__button {
+
+.logo {
+  width: 60px;
+  margin-top: 10px;
+  float: left;
+}
+.logo img {
+  width: 60px;
+}
+
+.burger {
   width: 20%;
   float: right;
-  cursor: pointer;
   color: #ffffff;
   font-size: 45px;
   text-align: right;
   transition: 0.3s ease-in-out;
 }
-.navbar .navbar__button:hover {
+.burger.burger:hover {
   color: #ffa500;
 }
 
-.navbar__logo {
-  float: left;
-  width: 60px;
+.navbar {
+  width: 100%;
+  height: 100vh;
+  top: 80px;
+  left: 0;
+  position: absolute;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-100%);
 }
-.navbar__logo img {
-  width: 60px;
+.navbar li {
+  color: #000000;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 40px 0px 40px 10px;
+}
+.navbar li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-.navbar__collapse {
+#menu-bar {
   display: none;
 }
 
+#menu-bar:checked ~ .navbar {
+  transform: translateX(0%);
+}
+
+/* .banner{
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/desarrolloweb2021t.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
 .banner {
   width: 100%;
-  height: 200px;
+  height: 400px;
   background-image: url("../img/desarrolloweb2021t.svg");
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media only screen and (min-width: 960px) {
-  .navbar .navbar__button {
+  .burger {
     display: none;
   }
 
-  .contenedor--navbar {
+  .navbar {
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    left: 0;
+    position: static;
+    margin-bottom: 0;
+    background-color: #000000;
+    transform: translateX(0%);
+    text-align: right;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
-
-  .navbar__collapse {
-    width: 40%;
-    display: block;
-    text-align: right;
-  }
-  .navbar__collapse li {
+  .navbar li {
     display: inline;
-    margin: 0px 15px;
+    text-align: center;
+    border-bottom: none;
+    padding: 40px 0px 40px 10px;
   }
-  .navbar__collapse li a {
+  .navbar li a {
     color: #ffffff;
+  }
+  .navbar li a:hover {
+    color: #ffa500;
   }
 
   .banner {
