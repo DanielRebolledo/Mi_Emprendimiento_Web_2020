@@ -60,25 +60,23 @@
     transform: translateX(0%);
 }
 
-/* .banner{
+.banner{
     width: 100%;
     height: 200px;
     background-image: url('../img/desarrolloweb2021t.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-} */
-
-.banner{
-    width: 100%;
-    height: 400px;
-    background-image: url('../img/desarrolloweb2021t.svg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
+
+
 @media only screen and (min-width: 960px){
+    .banner{
+        height: 400px;
+        background-size: auto;
+    }
+    
     .burger{
         display: none;
     }

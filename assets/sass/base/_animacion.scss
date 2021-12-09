@@ -1,0 +1,30 @@
+//Animación SVG
+.svg__animado{
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+#icon_animacion{
+    transform: translateX(25%);
+    animation: horizontal 3s infinite;
+}
+
+@keyframes horizontal{
+    50%{transform: unset;}
+    100%{transform: translateX(25%);}
+}
+
+.rotacion{
+    animation: giro 3s linear infinite; 
+    transform-origin: 80% 80%;
+    
+}
+
+
+@keyframes giro{
+    0% {transform: rotate(0);}
+    100% {transform:rotate(360deg);}
+  }
+  
+
